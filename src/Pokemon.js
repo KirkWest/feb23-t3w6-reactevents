@@ -10,6 +10,7 @@ export default class Pokemon extends React.Component {
 		}
 	}
 
+	// added in fetching of sprites
 	async componentDidMount() {
 		let randomPokemonNumber = Math.floor(Math.random() * 1010) + 1;
 		let apiResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonNumber}`);
